@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Stories</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.apollobuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexide.project.multiplatform.multiplatformasnature</nature>
+		<nature>com.adobe.flexide.project.multiplatform.multiplatformnature</nature>
+		<nature>com.adobe.flexbuilder.project.apollonature</nature>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[source path] assets</name>
+			<type>2</type>
+			<location>/Users/MacBook/Desktop/assets</location>
+		</link>
+		<link>
+			<name>[source path] scaffold_mobile-src</name>
+			<type>2</type>
+			<location>/Users/MacBook/Downloads/Starling-Framework-master/samples/scaffold_mobile/src</location>
+		</link>
+		<link>
+			<name>[source path] spine-starling-src</name>
+			<type>2</type>
+			<location>/Users/MacBook/Desktop/DevFlash/spine-starling/spine-starling/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

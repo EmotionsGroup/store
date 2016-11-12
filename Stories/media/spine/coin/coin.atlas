@@ -1,0 +1,48 @@
+
+skeleton.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coin_1
+  rotate: false
+  xy: 2, 45
+  size: 71, 72
+  orig: 71, 72
+  offset: 0, 0
+  index: -1
+coin_2
+  rotate: true
+  xy: 75, 50
+  size: 67, 73
+  orig: 67, 73
+  offset: 0, 0
+  index: -1
+coin_3
+  rotate: true
+  xy: 2, 2
+  size: 41, 73
+  orig: 41, 73
+  offset: 0, 0
+  index: -1
+coin_4
+  rotate: true
+  xy: 152, 32
+  size: 16, 76
+  orig: 16, 76
+  offset: 0, 0
+  index: -1
+coin_5
+  rotate: true
+  xy: 77, 7
+  size: 41, 73
+  orig: 41, 73
+  offset: 0, 0
+  index: -1
+coin_6
+  rotate: true
+  xy: 150, 50
+  size: 67, 73
+  orig: 67, 73
+  offset: 0, 0
+  index: -1
