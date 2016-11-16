@@ -9,6 +9,8 @@ package objects
 	import spine.starling.SkeletonAnimation;
 	import spine.starling.StarlingTextureLoader;
 	
+	import starling.animation.Transitions;
+	import starling.animation.Tween;
 	import starling.core.Starling;
 	import starling.display.Sprite;
 	
@@ -24,6 +26,7 @@ package objects
 		static public const DedAtlasTexture:Class;
 		
 		public static var dedSceleton:SkeletonAnimation;
+		private static var dedTween:Tween;
 		
 		public function Ded()
 		{
@@ -60,8 +63,17 @@ package objects
 		
 		public function speak():void {
 			
-			dedSceleton.state.setAnimationByName(0, "all", true);
+			dedSceleton.state.setAnimationByName(0, "all", false);
 			dedSceleton.state.setAnimationByName(1, "svechka", true);
+			
+		}
+		
+		public function tween():void {
+			
+			dedTween = new Tween(dedSceleton, 2, Transitions.EASE_OUT);
+			dedTween.animate("x", dedSceleton.x - 170);
+			dedTween.delay = 9.5;
+			Starling.juggler.add(dedTween);
 			
 		}
 	}

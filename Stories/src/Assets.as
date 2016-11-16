@@ -10,6 +10,9 @@ package
 		[Embed(source="../media/textures/coinBtn.png")]
 		static public const CoinBtn:Class;
 		
+		[Embed(source="../media/textures/bablik_1.png")]
+		static public const Bablik:Class; 
+		
 		public static var storeTextures:Dictionary = new Dictionary();
 		
 		public static function getTexture(name:String):Texture {

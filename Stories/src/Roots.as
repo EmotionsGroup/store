@@ -1,6 +1,5 @@
 package
 {
-	import starling.display.Image;
 	import starling.display.Sprite;
 	import starling.events.Event;
 	import starling.utils.AssetManager;
@@ -16,6 +15,7 @@ package
 		{
 			addEventListener(Menus.START_STORE, onStartGame);
 			//addEventListener(Games.GAME_OVER,  onGameOver);
+			addEventListener(Menus.START_SCENE_TWO, onStartTwoScene);
 		}
 		
 		public function start(assets:AssetManager):void
@@ -40,12 +40,19 @@ package
 			showScene(Games);
 		}
 		
+		private function onStartTwoScene(event:Event, gameMode:String):void {
+			
+			trace("Scene two! Mode: " + gameMode);
+			showScene(SceneTwo);
+		}
+		
 		private function showScene(screen:Class):void
 		{
 			if (_activeScene) _activeScene.removeFromParent(true);
 			_activeScene = new screen();
 			addChild(_activeScene);
 		}
+	
 		
 		public static function get assets():AssetManager { return sAssets; }
 		

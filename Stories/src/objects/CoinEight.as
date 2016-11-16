@@ -10,6 +10,8 @@ package objects
 	{
 		
 		private static var coinBtn:Button;
+		
+		private static var coinBlick:CoinBlick;
 		private static var coinAnim:CoinAnimation;
 		
 		public function CoinEight()
@@ -35,6 +37,11 @@ package objects
 				coinAnim.y = coinBtn.y + 35;
 				this.addChild(coinAnim);
 				Roots.assets.playSound("coin");
+				
+				coinBlick = new CoinBlick();
+				coinBlick.x = int((Constant.STAGE_WIDTH_COIN_BLICK_EIGHT - coinBlick.width) / 2);
+				coinBlick.y = Constant.STAGE_HEIGHT_COIN_BLICK_EIGHT * 0.75;
+				this.addChild(coinBlick);
 				
 				trace("Coin eight is pressed");
 			}

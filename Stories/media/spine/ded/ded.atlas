@@ -4,121 +4,142 @@ size: 1024,512
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-body
+bab_1
   rotate: true
   xy: 2, 2
+  size: 15, 13
+  orig: 15, 13
+  offset: 0, 0
+  index: -1
+bab_2
+  rotate: false
+  xy: 589, 220
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+bab_3
+  rotate: false
+  xy: 746, 418
+  size: 220, 92
+  orig: 220, 92
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 19
   size: 206, 281
   orig: 206, 281
   offset: 0, 0
   index: -1
 close_ease
   rotate: true
-  xy: 978, 385
+  xy: 867, 239
   size: 108, 23
   orig: 108, 23
   offset: 0, 0
   index: -1
 head
   rotate: true
-  xy: 502, 358
+  xy: 502, 375
   size: 135, 242
   orig: 135, 242
   offset: 0, 0
   index: -1
 hends
   rotate: false
-  xy: 287, 211
+  xy: 287, 228
   size: 193, 69
   orig: 193, 69
   offset: 0, 0
   index: -1
 left_brov
   rotate: false
-  xy: 746, 368
+  xy: 656, 248
   size: 88, 125
   orig: 88, 125
   offset: 0, 0
   index: -1
 left_ear
-  rotate: false
-  xy: 603, 164
+  rotate: true
+  xy: 888, 370
   size: 46, 75
   orig: 46, 75
   offset: 0, 0
   index: -1
 mustazh
   rotate: false
-  xy: 287, 282
+  xy: 287, 299
   size: 213, 211
   orig: 213, 211
   offset: 0, 0
   index: -1
 nouse
   rotate: false
-  xy: 765, 309
+  xy: 892, 226
   size: 56, 57
   orig: 56, 57
   offset: 0, 0
   index: -1
 open_ease
-  rotate: true
-  xy: 740, 251
+  rotate: false
+  xy: 482, 230
   size: 105, 23
   orig: 105, 23
   offset: 0, 0
   index: -1
 right_brov
-  rotate: false
-  xy: 656, 237
+  rotate: true
+  xy: 746, 265
   size: 82, 119
   orig: 82, 119
   offset: 0, 0
   index: -1
 right_ear
-  rotate: true
-  xy: 651, 181
+  rotate: false
+  xy: 892, 285
   size: 54, 83
   orig: 54, 83
   offset: 0, 0
   index: -1
 svechka_1
   rotate: true
-  xy: 836, 426
+  xy: 746, 349
   size: 67, 140
   orig: 67, 140
   offset: 0, 0
   index: -1
 svechka_2
   rotate: true
-  xy: 836, 367
+  xy: 502, 255
   size: 57, 140
   orig: 57, 140
   offset: 0, 0
   index: -1
 svechka_3
   rotate: true
-  xy: 482, 176
+  xy: 746, 200
   size: 63, 119
   orig: 63, 119
   offset: 0, 0
   index: -1
 svechka_4
-  rotate: true
-  xy: 502, 241
+  rotate: false
+  xy: 968, 358
   size: 54, 152
   orig: 54, 152
   offset: 0, 0
   index: -1
 svechka_5
   rotate: true
-  xy: 502, 297
+  xy: 502, 314
   size: 59, 152
   orig: 59, 152
   offset: 0, 0
   index: -1
 svechka_back
   rotate: false
-  xy: 2, 210
+  xy: 2, 227
   size: 283, 283
   orig: 283, 283
   offset: 0, 0

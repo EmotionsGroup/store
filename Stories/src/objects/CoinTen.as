@@ -10,7 +10,11 @@ package objects
 	{
 		
 		private static var coinBtn:Button;
+		
+		private static var coinBlick:CoinBlick;
 		private static var coinAnim:CoinAnimation;
+		
+		public var touch:Touch;
 		
 		public function CoinTen()
 		{
@@ -25,7 +29,7 @@ package objects
 		
 		private function onClick(event:TouchEvent):void {
 			
-			var touch:Touch = event.getTouch(this, TouchPhase.BEGAN);
+			touch = event.getTouch(this, TouchPhase.BEGAN);
 			
 			if (touch) {
 				
@@ -36,7 +40,12 @@ package objects
 				this.addChild(coinAnim);
 				Roots.assets.playSound("coin");
 				
-				trace("Coin seven is pressed");
+				coinBlick = new CoinBlick();
+				coinBlick.x = int((Constant.STAGE_WIDTH_COIN_BLICK_TEN - coinBlick.width) / 2);
+				coinBlick.y = Constant.STAGE_HEIGHT_COIN_BLICK_TEN * 0.75;
+				this.addChild(coinBlick);
+				
+				trace("Coin ten is pressed");
 			}
 		}
 	}

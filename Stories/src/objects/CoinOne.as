@@ -14,6 +14,11 @@ package objects
 		private static var coinBlick:CoinBlick;
 		private static var coinAnim:CoinAnimation;
 		
+		private var fingerBablikCoins:FingerAnim;
+		
+		public var touch:Touch;
+		public var isPressed:Boolean;
+		
 		public function CoinOne()
 		{
 			coinBtn = new Button(Assets.getTexture("CoinBtn"));
@@ -24,11 +29,19 @@ package objects
 			
 			coinBtn.addEventListener(TouchEvent.TOUCH, onClick);
 			
+			fingerBablikCoins = new FingerAnim();
+			fingerBablikCoins.x = int((Constant.STAGE_WIDHT_FINGER_B2 - fingerBablikCoins.width) / 2);
+			fingerBablikCoins.y = Constant.STAGE_HEIGHT_FINGER_B2 * 0.75;
+			this.addChild(fingerBablikCoins);
+			fingerBablikCoins.rotation = 160;
+			fingerBablikCoins.anim();
+			
 		}
 		
 		private function onClick(event:TouchEvent):void {
 			
-			var touch:Touch = event.getTouch(this, TouchPhase.BEGAN);
+			
+			touch = event.getTouch(this, TouchPhase.BEGAN);
 			
 			if (touch) {
 				
@@ -43,6 +56,8 @@ package objects
 				coinBlick.x = int((Constant.STAGE_WIDTH_COIN_BLICK_ONE - coinBlick.width) / 2);
 				coinBlick.y = Constant.STAGE_HEIGHT_COIN_BLICK_ONE * 0.75;
 				this.addChild(coinBlick);
+				
+				this.removeChild(fingerBablikCoins);
 				
 				trace("Coin one is pressed");
 			}
