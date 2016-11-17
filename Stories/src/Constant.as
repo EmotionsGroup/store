@@ -98,6 +98,9 @@ package
 			
 			public static const STAGE_WIDHT_FINGER_B2:int = 40;
 			public static const STAGE_HEIGHT_FINGER_B2:int = 420;
+			
+			public static const STAGE_WIDHT_BTN_NEXT:int = 1000;
+			public static const STAGE_HEIGHT_BTN_NEXT:int = 450;
 		}
 	}
 }

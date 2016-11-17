@@ -9,6 +9,7 @@ package objects
 	import spine.starling.SkeletonAnimation;
 	import spine.starling.StarlingTextureLoader;
 	
+	import starling.animation.DelayedCall;
 	import starling.animation.Transitions;
 	import starling.animation.Tween;
 	import starling.core.Starling;
@@ -66,6 +67,9 @@ package objects
 			dedSceleton.state.setAnimationByName(0, "all", false);
 			dedSceleton.state.setAnimationByName(1, "svechka", true);
 			
+			var delayCallAway:DelayedCall = new DelayedCall(dedGoEway, 9.0);
+			Starling.juggler.add(delayCallAway);
+			
 		}
 		
 		public function tween():void {
@@ -75,6 +79,11 @@ package objects
 			dedTween.delay = 9.5;
 			Starling.juggler.add(dedTween);
 			
+		}
+		
+		private function dedGoEway():void {
+			
+			this.removeChild(dedSceleton);
 		}
 	}
 }

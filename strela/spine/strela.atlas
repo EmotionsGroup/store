@@ -1,0 +1,20 @@
+
+skeleton.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blik
+  rotate: false
+  xy: 458, 124
+  size: 108, 109
+  orig: 108, 109
+  offset: 0, 0
+  index: -1
+strela_1
+  rotate: false
+  xy: 2, 2
+  size: 454, 231
+  orig: 454, 231
+  offset: 0, 0
+  index: -1

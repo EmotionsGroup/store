@@ -13,6 +13,7 @@ package objects
 		
 		private static var coinBlick:CoinBlick;
 		private static var coinAnim:CoinAnimation;
+		private static var btnNext:ButtonNext;
 		
 		public var touch:Touch;
 		
@@ -46,6 +47,10 @@ package objects
 				this.addChild(coinBlick);
 				
 				trace("Coin ten is pressed");
+				
+				btnNext = new ButtonNext();
+				this.addChild(btnNext);
+				btnNext.tween();
 			}
 		}
 	}

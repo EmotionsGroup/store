@@ -19,7 +19,7 @@ package
 		
 		private function init():void {
 			
-			//Roots.assets.playSound("music2");
+			Roots.assets.playSound("music2");
 			
 			var button:Button = new Button(Roots.assets.getTexture("button_normal"), "Scene one");
 			button.textFormat.font = "Ubuntu";
